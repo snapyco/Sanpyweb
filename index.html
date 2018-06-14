@@ -4,17 +4,13 @@
     <!-- Basic Page Info -->
     <meta charset="utf-8">
     <title>Snapy - Coming Soon</title>
-    <meta name="description" content="Laaris - Coming Soon">
-    <meta name="author" content="laaris.com">
+    <meta name="description" content="Snapy - Coming Soon">
+    <meta name="author" content="snapy.co">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-
-    <!-- FONT -->
-    <link href='//fonts.googleapis.com/css?family=Poppins:200,300,600,700|Playfair+Display:700i' rel='stylesheet' type='text/css'>
+    
 
     <!-- ICON FONTS -->
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -24,7 +20,24 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      .video-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+      }
+      .video-responsive iframe{
+        left:0;
+        top:0;
+        height:70%;
+        width:70%;
+        position:absolute;
+      }
+    
+    </style>
   </head>
   <body>
     <div class="loader_bg"><div class="loader"></div></div>
@@ -42,7 +55,10 @@
             <li><a href="tel:+91 789 9318 701">+91 789 9318 701</a></li>
             <li> / </li>
             <li><a href="mailto:contact@snapy.co">contact@snapy.co</a></li>
-            <li class="info"><i class="fa fa-bars fa-2x"></i></li>
+            <li>
+              <a  target="_blank"  href="https://www.linkedin.com/company/snapyco/">
+                <i class="fa fa-linkedin-square" style="font-size:30px;"></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -70,189 +86,16 @@
             </div>
           </div>
         </div>
-        <div class="subscribe" style="display:none">
-          <form class="subscribe_form" action="subscribe.php" method="POST">
-            <div class="form-group">
-              <label for="mail-subscribe">SUBSCRIBE</label>
-              <input type="text" id="mail-subscribe" name="email" placeholder="Enter your email"
-                     onfocus="this.placeholder = 'Enter your email'"
-                     onblur="this.placeholder = 'Enter your email'"
-                     class="form-control email"/>
-              <button class="submit" type="submit" value="submit">
-                <i class="fa fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </form>   
-        </div>
+       
         <div class="copyright color_grey5">Copyright © 2017 Snapy.co. All Rights Reserved.</div>
       </div>
-      <div id="info">
-        <div class="close_info"><i class="fa fa-close fa-2x"></i></div>
-        <div class="step"></div>
-        <h4 class="subtitle">WE'RE A CREATIVE AGENCY</h4>
-        <h1 class="font_bold letter-spacing_05 title">
-          Ideal <span class="serif">solutions</span> for any business
-        </h1>
-        <div class="space_10"></div>
-        <div class="services">
-          <div class="col-xs-12 item">
-            <h2 class="font_bold letter-spacing_05 service">01. <br><span class="serif">Branding</span></h2>
-            <p class="letter-spacing_05 color_grey">Sorem ipsum dolor sit amet, consectetur adipisicing elit em ipsum dolor sit amet, consectetur adipisicing elit, orem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          </div>
-          <div class="space_5"></div>
-          <div class="col-xs-12 item">
-            <h2 class="font_bold letter-spacing_05 service">02. <br><span class="serif">Web Design</span></h2>
-            <p class="letter-spacing_05 color_grey">Sorem ipsum dolor sit amet, consectetur adipisicing elit em ipsum dolor sit amet, consectetur adipisicing elit, orem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          </div>
-          <div class="space_5"></div>
-          <div class="col-xs-12 item">
-            <h2 class="font_bold letter-spacing_05 service">03. <br><span class="serif">Development</span></h2>
-            <p class="letter-spacing_05 color_grey">Sorem ipsum dolor sit amet, consectetur adipisicing elit em ipsum dolor sit amet, consectetur adipisicing elit, orem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          </div>
-        </div>
-        <div class="space_10"></div>
-        <div class="portfolio">
-          <h2 class="font_bold title">Selected <span class="serif">works</span></h2>
-          <div class="space_10"></div>
-          <div id="filters" class="portfolio-filters">
-            <ul class="list-inline">
-              <li class="color_black"><b>LASTEST WORK</b></li>
-              <li class="font_bold color_purple">|</li>
-              <li><a href="javascript:void(0)" data-filter="" class="active">All</a></li>
-              <li><a href="javascript:void(0)" data-filter=".branding">Branding</a></li>
-              <li><a href="javascript:void(0)" data-filter=".design">Design</a></li>
-              <li><a href="javascript:void(0)" data-filter=".development">Development</a></li>
-            </ul>
-          </div>
-          <div class="space_5"></div>
-          <div id="Portfolio" class="lightbox-gallery full_width">
-            <div class="portfolio-sizer"></div>
-            <div class="portfolio-item portfolio-item--height2 design">
-              <a href="img/c1.jpg">
-                <div class="project-image">
-                  <img src="img/c1.jpg" class="img-rounded" alt="image"/>
-                </div>
-              </a>
-            </div>
-            <div class=" portfolio-item design branding">
-              <a href="img/c12.jpg">
-                <div class="project-image">
-                  <img src="img/c12.jpg" class="img-rounded" alt="image"/>
-                </div>
-              </a>
-            </div>
-            <div class=" portfolio-item development">
-              <a href="img/c9.jpg">
-                <div class="project-image">
-                  <img src="img/c9.jpg" class="img-rounded" alt="image"/>
-                </div>
-              </a>
-            </div>
-            <div class=" portfolio-item portfolio-item--width2 development branding">
-              <a href="img/c4.jpg">
-                <div class="project-image">
-                  <img src="img/c4.jpg" class="img-rounded" alt="image"/>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="space_10"></div>
-        <div class="team">
-          <h2 class="font_bold title">Our <span class="serif">team</span></h2>
-          <div class="space_10"></div>
-          <div class="items">
-            <div class="item">
-              <img src="img/t6.jpg" class="img-responsive img-rounded img_shadow" alt="">
-              <br>
-              <p class="font_semibold">John Smith</p>
-              <span>CEO</span>
-            </div>
-            <div class="item">
-              <img src="img/t5.jpg" class="img-responsive img-rounded img_shadow" alt="">
-              <br>
-              <p class="font_semibold">James Williams</p>
-              <span>Developer</span>
-            </div>
-            <div class="item">
-              <img src="img/t2.jpg" class="img-responsive img-rounded img_shadow" alt="">
-              <br>
-              <p class="font_semibold">Robert Johnson</p>
-              <span>Designer</span>
-            </div>
-            <div class="item">
-              <img src="img/t1.jpg" class="img-responsive img-rounded img_shadow" alt="">
-              <br>
-              <p class="font_semibold">Robert Johnson</p>
-              <span>Designer</span>
-            </div>
-          </div>
-        </div>
-        <div class="space_5"></div>
-        <div class="contact">
-          <h2 class="font_bold title">Get <span class="serif">in</span> touch</h2>
-          <div class="space_5"></div>
-          <p>Address : Street Lorem Ipsum, New York, USA</p>
-          <p>Email: <a href="mailto:example@domain.com">example@domain.com</a></p>
-          <p>Phone: <a href="tel:+00 123 456 789" class="color_orange font_bold">+00 123 456 789</a></p>
-          <div class="space_5"></div>
-          <form id="contact-form" class="fadeInUpBig anim" method="post" action="#">
-            <div class="messages"></div>
-            <div class="controls">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input id="form_name" type="text" name="name" class="form-control"
-                           placeholder="Your name" required="required" data-error="Name is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input id="form_email" type="email" name="email" class="form-control"
-                           placeholder="Your email" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input id="form_subject" type="text" name="subject" class="form-control"
-                           placeholder="Write the subject">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea id="form_message" name="message" class="form-control"
-                              placeholder="Write message..." rows="4" required="required"
-                              data-error="Please, leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <input type="submit" class="btn btn-send" value="Send message">
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div id="cd-google-map">
-          <div id="google-container"></div>
-          <div id="cd-zoom-in"></div>
-          <div id="cd-zoom-out"></div>
-        </div>
-      </div>
-    </div>
-
+    
+   
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <video src="img/video.mp4" autoplay loop controls></video>
+      <div role="document" style="width:70%; height:70%;">
+        <div class="video-responsive">
+        <iframe  src="https://www.youtube.com/embed/RWhVf6U9HUg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -260,11 +103,10 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7FeeXEe_JgmG3DrAtHJoUFNzZVt0DXyQ"></script>
-    <script type="text/javascript" src="js/map_config.js"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
+  
+  <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/portfolio_config.js"></script>
+  
     
     <script type="text/javascript" src="js/script.js"></script>
   </body>
